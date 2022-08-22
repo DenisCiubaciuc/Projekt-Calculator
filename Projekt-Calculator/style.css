@@ -1,0 +1,29 @@
+
+.calculator-grid {
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(4,100px);
+    grid-template-rows: minmax(120px, auto)repeat(5, 100px);
+    gap: 5px;
+}
+/* .span-tow{
+    grid-column: span 2;
+} */
+#all-clear{
+    grid-column: span 2;
+}
+
+#delete{
+    grid-column: span 2;
+}
+
+.output{
+    font-size: 2.5em;
+    background-color: gray;
+    grid-column: 1/-1;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    word-wrap: break-word;
+    word-break: break-all;
+}
